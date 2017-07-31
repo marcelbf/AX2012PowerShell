@@ -1,6 +1,6 @@
 ﻿#Stop-AOS
 Param(
-    $aosServerNames = ('AU11STHAOSPRD07','AU11STHAOSPRD08'),
+    [string[]]$aosServerNames = $env:COMPUTERNAME,
     $aosServiceName = 'AOS60$01'
     )
 
