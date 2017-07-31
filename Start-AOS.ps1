@@ -1,6 +1,6 @@
 ﻿#Start-AOS
 Param(
-    $aosServerNames = (''),
+    [string[]]$aosServerNames = $env:COMPUTERNAME,
     $aosServiceName = 'AOS60$01'
     )
 
